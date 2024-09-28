@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Метод для проверки делимости на 4 и неделимости на 6
 
 import java.util.Scanner;
@@ -95,3 +96,10 @@ public class Main {
     }
 }
 
+=======
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+>>>>>>> origin/main
