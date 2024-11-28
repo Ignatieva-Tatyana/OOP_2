@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static void zad_c() {
-        String text = "ffdcrzv aa2aa f 1234 jkjk"; // строку непосредственно в код
+        String text = "ffdcrzv aaaaaaaa ff543 1234 jkjk";
         String[] words = text.split("\\s+");
         String shortestWord = words[0];
 
@@ -36,12 +36,13 @@ public class Main {
         System.out.println("\nWord with minimal unique characters: " + shortestWord);
     }
 
-    private static int countUniqueChars(String word) {
+    private static int countUniqueChars(String word) { //countUniqueChars подсчет уникальных слов
         boolean[] charSeen = new boolean[256];
         int uniqueCount = 0;
 
         for (char c : word.toCharArray()) {
-            if (!charSeen[c]) {
+            if (!charSeen[c]) //Проверяется, встречался ли уже текущий символ c
+            {
                 charSeen[c] = true;
                 uniqueCount++;
             }
@@ -67,6 +68,9 @@ public class Main {
                     break;
                 }
             }
+            //currentChar >= 'а' && currentChar <= 'я' — проверяется, является ли символ русской буквой в нижнем регистре.
+            //currentChar >= 'А' && currentChar <= 'Я' — проверяется, является ли символ русской буквой в верхнем регистре.
+            //currentChar >= 'ё' && currentChar <= 'Ё' — проверяется, является ли символ русской буквой “ё”.
         }
         System.out.println("kol-vo slow " + count);
     }
