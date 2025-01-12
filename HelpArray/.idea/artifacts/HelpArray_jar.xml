@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HelpArray:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HelpArray_jar</output-path>
+    <root id="archive" name="HelpArray.jar">
+      <element id="module-output" name="HelpArray" />
+    </root>
+  </artifact>
+</component>
